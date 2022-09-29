@@ -23,7 +23,7 @@ const Rockets = () => {
         id, name, description, images, reserved,
       }) => (
         <div key={id} className="mb-4 d-flex">
-          <div className="image-container">
+          <div className="image-container me-5">
             <img src={images[0]} className="thumbnail" alt="rocket thumbnail" />
           </div>
           <div>
