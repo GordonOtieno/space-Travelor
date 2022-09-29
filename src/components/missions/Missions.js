@@ -6,7 +6,7 @@ import { joinMission, leaveMission, fetchMissions } from '../../store/misions/mi
 
 const Missions = () => {
   const dispatch = useDispatch();
-  const missions = useSelector((state) => state.mission);
+  const missions = useSelector((state) => state.missions);
   const availableMisions = missions.length;
   console.log(availableMisions);
   useEffect(() => {
