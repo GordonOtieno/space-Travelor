@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './Navbar.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -7,6 +7,11 @@ function Header() {
   const linkStyle = {
     textDecoration: 'none',
     color: '#121212',
+  };
+  const activeStyle = {
+    textDecoration: 'underline',
+    color: '#0000FF',
+
   };
   return (
     <header>
@@ -19,14 +24,19 @@ function Header() {
       </nav>
       <ul className="navbar">
         <li className="nav-item">
-          <Link style={linkStyle} to="/">
+          <NavLink to="/" end style={({ isActive }) => (isActive ? activeStyle : linkStyle)}>
             Rockets
-          </Link>
+          </NavLink>
         </li>
-        <li>
-          <Link style={linkStyle} to="/missions">
+        <li className="nav-item">
+          <NavLink to="/missions" style={({ isActive }) => (isActive ? activeStyle : linkStyle)}>
             Missions
-          </Link>
+          </NavLink>
+        </li>
+        <li className="nav-item">
+          <NavLink to="/profile" style={({ isActive }) => (isActive ? activeStyle : linkStyle)}>
+            Profile
+          </NavLink>
         </li>
       </ul>
     </header>

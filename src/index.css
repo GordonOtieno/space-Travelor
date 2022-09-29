@@ -4,6 +4,7 @@
     padding: 1em 5rem;
   }
 }
+
 .image-container {
   width: 500px;
 }
@@ -11,4 +12,14 @@
 img {
   object-fit: cover;
   width: 490px;
+}
+
+.subscriptions-container {
+  list-style: none;
+  padding: 0;
+}
+
+.subscriptions-container li {
+  border: 1px solid rgb(228, 221, 221);
+  padding: 10px;
 }

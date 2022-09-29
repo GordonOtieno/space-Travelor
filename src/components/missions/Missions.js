@@ -1,5 +1,5 @@
-import { useEffect } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { useEffect } from 'react'; import 'bootstrap/dist/css/bootstrap.min.css';
+
 import { Table, Badge, Button } from 'react-bootstrap';
 import { useSelector, useDispatch } from 'react-redux';
 import { joinMission, leaveMission, fetchMissions } from '../../store/misions/missions';
