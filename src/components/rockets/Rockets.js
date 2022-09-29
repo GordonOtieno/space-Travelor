@@ -7,12 +7,12 @@ import { bookRocket, cancelBooking, fetchRockets } from '../../store/rockets/roc
 const Rockets = () => {
   const dispatch = useDispatch();
   const rockets = useSelector((state) => state.rockets);
-
+  const availableRockets = rockets.length;
   useEffect(() => {
-    if (!rockets.length) {
+    if (!availableRockets) {
       dispatch(fetchRockets);
     }
-  }, []);
+  }, [availableRockets, dispatch]);
 
   const handleBooking = (id) => dispatch(bookRocket(id));
   const handleCancellation = (id) => dispatch(cancelBooking(id));
