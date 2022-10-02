@@ -17,7 +17,7 @@ function Header() {
     <header>
       <nav className="navbar">
         <div className="navbar-brand d-flex">
-          <img className="logo" alt="logo" src={`${process.env.PUBLIC_URL}planet.png`} />
+          <img className="logo" alt="logo" src={`${process.env.PUBLIC_URL}/planet.png`} />
           <h1 className="ms-3">Space Traveler&apos;s Hub</h1>
         </div>
 
