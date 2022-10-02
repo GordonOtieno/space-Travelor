@@ -21,7 +21,7 @@ It is a website that allows one to:
 
  ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://gordonotieno.github.io/space-Travelor/)
 
 ## Getting Started
 
